@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Undo YouTube Seek",
+  "version": "1.0",
+  "description": "Press Ctrl+Z to go back 5 seconds on YouTube.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
